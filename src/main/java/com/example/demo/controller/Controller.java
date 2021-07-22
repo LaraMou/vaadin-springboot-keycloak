@@ -10,10 +10,12 @@ import java.util.List;
 public class Controller {
     @GetMapping("/months")
     public List<String> welcomePage(){
+        System.out.println("entro aqui en wecome");
         return Arrays.asList("DECEMBER","JANUARY","FEBRUARY");
     }
     @GetMapping("/admin")
     public String adminPage(){
+        System.out.println("entro aqui");
         return "Admin Page";
     }
 
